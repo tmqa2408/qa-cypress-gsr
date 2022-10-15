@@ -21,12 +21,22 @@ export async function setupNodeEvents(on, config) {
 export default defineConfig({
     e2e: {
         baseUrl: "https://drupal.org",
-        specPattern: "**/*.feature",
+        specPattern: [
+            "cypress/**/*.feature",
+            "app/**/*.feature"
+        ],
+        excludeSpecPattern: [
+            "example-tests/**/*.feature"
+        ],
         supportFile: false,
         setupNodeEvents,
         screenshotsFolder: "reports/screenshots",
         videosFolder: "reports/videos",
         viewportWidth: 1366,
         viewportHeight: 768,
+        reporter: "junit",
+        reporterOptions: {
+            mochaFile: "reports/test-output-[hash].xml"
+        }
     },
 });

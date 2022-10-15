@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+
+reports/
+!reports/.gitkeep
+!reports/videos/.gitkeep
+!reports/screenshots/.gitkeep

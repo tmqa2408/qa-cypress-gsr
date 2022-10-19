@@ -1,4 +1,4 @@
-# Mobomo Cypress Test Framework
+# Mobomo Cypress 10 Test Framework
 
 ## Set up your project
 

@@ -5,3 +5,7 @@ reports/
 !reports/.gitkeep
 !reports/videos/.gitkeep
 !reports/screenshots/.gitkeep
+
+.idea
+.vscode
+

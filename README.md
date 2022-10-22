@@ -12,6 +12,11 @@
 * Edit the `/tests/cypress.config.js` to set your base url appropriately, as well as alter any other configuration.
 * Write your tests in the `/tests/app/` folder, using the examples provided to extend the base gherkin configurations.
 
+## Included step definitions
+There are a few pre-defined step definitions that are included with the image.  Additions to this pre-defined set can be submitted via a pull request where the definitions are included in the `/cypress/support/step_definitions` directory.
+- Common [Drupal](docs/step_definitions/drupal.md) functions.
+- Common [DOM Element](docs/step_definitions/elements.md) manipulation tests.
+
 ## Running your tests
 
 To run your tests on a remote server (dev, stage, etc...) use the following docker run command to run the tests:

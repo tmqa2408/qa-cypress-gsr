@@ -12,6 +12,6 @@
   },
   "scripts": {
     "clean-reports": "rm -f reports/*.xml",
-    "run-tests": "npx run cypress"
+    "run-tests": "npx cypress run"
   }
 }

@@ -11,6 +11,7 @@
     "cypress": "^10.10.0"
   },
   "scripts": {
-    "clean": "rm -f reports/*.xml"
+    "clean-reports": "rm -f reports/*.xml",
+    "run-tests": "npx run cypress"
   }
 }

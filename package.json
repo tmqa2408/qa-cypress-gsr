@@ -9,5 +9,8 @@
     "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "cypress": "^10.10.0"
+  },
+  "scripts": {
+    "clean": "rm -f reports/*.xml"
   }
 }

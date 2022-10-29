@@ -32,8 +32,9 @@ export default defineConfig({
         setupNodeEvents,
         screenshotsFolder: "reports/screenshots",
         videosFolder: "reports/videos",
-        viewportWidth: 1366,
-        viewportHeight: 768,
+        video:false,
+        viewportWidth: 1920,
+        viewportHeight: 1080,
         reporter: "junit",
         reporterOptions: {
             mochaFile: "reports/test-output-[hash].xml"

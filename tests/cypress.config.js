@@ -20,7 +20,7 @@ export async function setupNodeEvents(on, config) {
 
 export default defineConfig({
     e2e: {
-        baseUrl: "https://drupal.org",
+        baseUrl: "https://www.gulfspillrestoration.noaa.gov/",
         specPattern: [
             "cypress/**/*.feature",
             "app/**/*.feature"
@@ -32,7 +32,7 @@ export default defineConfig({
         setupNodeEvents,
         screenshotsFolder: "reports/screenshots",
         videosFolder: "reports/videos",
-        video:false,
+        video: false,
         viewportWidth: 1920,
         viewportHeight: 1080,
         reporter: "junit",

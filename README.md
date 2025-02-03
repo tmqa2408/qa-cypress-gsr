@@ -28,3 +28,6 @@ In order to run tests on a local development environment, you will need to run t
 * Edit the `/tests/cypress.config.js` file to use the webserver service name as the hostname for the base url.
 * Use `docker run` command with the `--network` switch to run it attached to the localdev virtual network:
     * `docker run --rm --network <NETWORK_NAME> -v "${PWD}/tests/cypress.config.js:/app/cypress.config.js:ro" -v "${PWD}/tests/app:/app/app:ro" -v "${PWD}/tests/reports:/app/reports" mobomo/cypress-test-runner:latest`
+
+  for local testing, you can use the following command:
+docker run --rm --network localdev -v "${PWD}/tests/cypress.config.js:/app/cypress.config.js:ro" -v "${PWD}/tests/app:/app/app:ro" -v "${PWD}/tests/reports:/app/reports" mobomo/cypress-test-runner:latest

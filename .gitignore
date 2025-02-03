@@ -1,10 +1,11 @@
 node_modules/
 
 reports/
+tests/reports
 !reports/.gitkeep
 !reports/videos/.gitkeep
 !reports/screenshots/.gitkeep
 
 .idea
 .vscode
-
+cypress/videos

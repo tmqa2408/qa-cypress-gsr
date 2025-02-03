@@ -6,12 +6,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "cypress": "^10.10.0"
+    "cypress": "^14.0.1"
   },
   "scripts": {
     "clean-reports": "rm -f reports/*.xml",
     "run-tests": "npx cypress run"
+  },
+  "dependencies": {
+    "esbuild": "^0.24.2"
   }
 }

@@ -5,6 +5,7 @@
     "cypress/support/step_definitions/**/*.{js,ts}",
     "app/[filepath]/**/*.{js,ts}",
     "app/[filepath].{js,ts}",
-    "app/support/step_definitions/**/*.{js,ts}"
+    "app/support/step_definitions/**/*.{js,ts}",
+    "tests/app/support/step_definitions/*.{js,ts}"
   ]
 }

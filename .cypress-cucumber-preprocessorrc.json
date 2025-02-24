@@ -1,11 +1,14 @@
 {
+  "json": {
+    "enabled": true,
+    "output": "cypress/reports/json/cucumber-report.json"
+  },
   "stepDefinitions": [
-    "cypress/integration/[filepath]/**/*.{js,ts}",
-    "cypress/integration/[filepath].{js,ts}",
-    "cypress/support/step_definitions/**/*.{js,ts}",
-    "app/[filepath]/**/*.{js,ts}",
-    "app/[filepath].{js,ts}",
-    "app/support/step_definitions/**/*.{js,ts}",
-    "tests/app/support/step_definitions/*.{js,ts}"
-  ]
+    "tests/app/support/step_definitions/[filepath].js",
+    "tests/app/support/step_definitions/*.js"
+  ],
+  "messages": {
+    "enabled": true,
+    "output": "cypress/reports/messages/cucumber-messages.ndjson"
+  }
 }

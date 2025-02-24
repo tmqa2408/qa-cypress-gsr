@@ -8,6 +8,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 When("I go on {string}", (url) => {
     cy.visit(url, {failOnStatusCode: false});
+//    cy.screenshot();
 });
 
 Then("I should see {string}", (text) => {

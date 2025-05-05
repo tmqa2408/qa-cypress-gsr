@@ -16,6 +16,6 @@ Then("First row of the list results should contain {string}", (text) => {
     cy.get('#CAST-Conservation-Program > button').should('contain', text);
 })
 
-Then("I selecct in a Status field {string}", (text) => {
-    cy.get('#edit-field-complianc-value').select("Complete");
-})
+// Then("I select {string} from status dropdown", (text) => {
+//     cy.get('#edit-field-complianc-value').select(text);
+// })

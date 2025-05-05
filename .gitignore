@@ -10,3 +10,5 @@ allure-results
 .idea
 .vscode
 cypress/videos
+screenshots/*
+

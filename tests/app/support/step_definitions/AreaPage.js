@@ -1,4 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
+
 before(() => {
     cy.intercept({ resourceType: /xhr|fetch/ }, { log: false });
   });

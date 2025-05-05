@@ -20,7 +20,7 @@ export async function setupNodeEvents(on, config) {
 
 export default defineConfig({
     e2e: {
-        baseUrl: "https://www.gulfspillrestoration.noaa.gov/",
+        baseUrl: "https://dev-01-alb-www-gsr.woc.noaa.gov",
         specPattern: [
             "cypress/**/*.feature",
             "app/**/*.feature"

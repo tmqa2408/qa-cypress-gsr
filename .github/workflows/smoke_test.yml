@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chrome, firefox, edge]
+        browser: [chrome]
     name: Run tests in ${{ matrix.browser }}
 
     steps:

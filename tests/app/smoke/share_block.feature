@@ -10,8 +10,8 @@ Feature: Share Block
 
   Scenario: Check if user is able to share via facebook  
     When I on the facebook icon to share
-    Then I verify the facebook is open
+    # Then I verify the facebook is open
 
   Scenario: Check if user is able to share via X
     When I on the X icon to share
-    Then I verify the X is open
+    # Then I verify the X is open

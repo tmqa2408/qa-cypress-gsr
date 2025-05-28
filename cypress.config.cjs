@@ -27,9 +27,28 @@ module.exports = defineConfig({
         }
       });
 
+      const urls = {
+        dev: "https://dev-01-alb-www-gsr.woc.noaa.gov",
+        staging: "https://staging-01-alb-www-gsr.woc.noaa.gov",
+        prod: "https://www.gulfspillrestoration.noaa.gov",
+      };
+
+      const version = config.env.version || "local";
+
+      if (!urls[version]) {
+        throw new Error(
+          `Invalid version specified: "${version}". Use one of ${Object.keys(
+            urls
+          ).join(", ")}`
+        );
+      }
+
+      config.baseUrl = urls[version];
+
       return config;
     },
-    baseUrl: "https://staging-01-alb-www-gsr.woc.noaa.gov",
+
+    //baseUrl: "https://staging-01-alb-www-gsr.woc.noaa.gov",
     specPattern: "tests/app/**/*.feature",
     supportFile: "tests/app/support/e2e.js",
     pageLoadTimeout: 120000,

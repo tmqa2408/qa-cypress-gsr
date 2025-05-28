@@ -103,11 +103,12 @@ jobs:
       - name: Add .nojekyll file
         run: touch gh-pages/combined-report/.nojekyll
 
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./gh-pages/combined-report
+          publish_dir: allure-report
+          publish_branch: gh-pages
 
       - name: Send email with report link
         uses: dawidd6/action-send-mail@v3

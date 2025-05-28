@@ -14,6 +14,7 @@ jobs:
     strategy:
       matrix:
         browser: [chrome]
+        env: [staging]
     name: Run tests in ${{ matrix.browser }}
 
     steps:
@@ -36,7 +37,7 @@ jobs:
         run: npx cypress verify
 
       - name: Run Cypress tests on ${{ matrix.browser }}
-        run: npx cypress run --browser ${{ matrix.browser }} --reporter mocha-allure-reporter
+        run: npx cypress run --env version=${{ matrix.env }} --browser ${{ matrix.browser }} --reporter mocha-allure-reporter
 
       - name: Upload Allure results
         if: success() && hashFiles('allure-results/**') != ''

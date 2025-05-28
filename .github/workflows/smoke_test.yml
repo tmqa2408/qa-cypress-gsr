@@ -8,8 +8,7 @@ on:
     - cron: "0 12 * * 1-5" # 6 AM Monday to Friday in GMT-6 (Colorado Springs)
   workflow_dispatch:
 permissions:
-  contents: read
-  issues: write
+  contents: write
 
 jobs:
   run-tests:

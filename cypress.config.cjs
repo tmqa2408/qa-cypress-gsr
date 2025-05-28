@@ -48,6 +48,7 @@ module.exports = defineConfig({
       return config;
     },
 
+    // commented out because it's not needed for the tests
     //baseUrl: "https://staging-01-alb-www-gsr.woc.noaa.gov",
     specPattern: "tests/app/**/*.feature",
     supportFile: "tests/app/support/e2e.js",

@@ -94,14 +94,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download Allure report artifact
+      - name: Download Allure Report
         uses: actions/download-artifact@v4
         with:
           name: allure-report
-          path: gh-pages/combined-report
-
-      - name: Add .nojekyll file
-        run: touch gh-pages/combined-report/.nojekyll
+          path: allure-report
 
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -39,12 +39,12 @@ jobs:
       - name: Run Cypress tests on ${{ matrix.browser }}
         run: npx cypress run --env version=${{ matrix.env }} --browser ${{ matrix.browser }} --reporter mocha-allure-reporter
 
-      - name: Upload Allure results
-        if: success() && hashFiles('allure-results/**') != ''
+      - name: Upload Allure Results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.browser }}
-          path: allure-results/*
+          name: allure-results
+          path: allure-results
 
       - name: Fail job if tests failed
         if: steps.cypress.outputs.status == 'failed'

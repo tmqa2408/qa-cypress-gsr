@@ -33,7 +33,7 @@ module.exports = defineConfig({
         prod: "https://www.gulfspillrestoration.noaa.gov",
       };
 
-      const version = config.env.version || "local";
+      const version = config.env.version || "dev";
 
       if (!urls[version]) {
         throw new Error(
